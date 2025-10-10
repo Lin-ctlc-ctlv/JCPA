@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JCPA Construction - Artist of Renovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Splash Screen -->
+    <div
+      id="splashScreen"
+      class="splash-screen fixed inset-0 bg-white z-50 flex items-center justify-center"
+    >
+      <div class="text-center">
+        <div class="logo-animation mb-4">
+          <img
+            src="img/jcpa_logo2.png"
+            alt="JCPA Logo"
+            class="w-28 h-28 mx-auto mb-4"
+          />
+        </div>
+        <h1 class="text-2xl font-bold text-red-600">JCPA CONSTRUCTION</h1>
+        <p class="text-gray-600 mt-2">Artist of Renovation</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navigation -->
+      <nav class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <img
+                src="img/jcpa_logo2.png"
+                alt="JCPA Logo"
+                class="w-14 h-14 mx-auto mb-0"
+              />
+              <span class="text-xl font-bold text-red-600"
+                >JCPA Construction</span
+              >
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-8">
+                <a
+                  href="#"
+                  onclick="showPage('home')"
+                  class="nav-link text-gray-900 font-medium"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  onclick="showPage('gallery')"
+                  class="nav-link text-gray-900 font-medium"
+                  >Gallery</a
+                >
+                <a
+                  href="#"
+                  onclick="showPage('contact')"
+                  class="nav-link text-gray-900 font-medium"
+                  >Contact Us</a
+                >
+                <a
+                  href="#"
+                  onclick="showPage('location')"
+                  class="nav-link text-gray-900 font-medium"
+                  >Our Location</a
+                >
+              </div>
+            </div>
+            <div class="md:hidden">
+              <button onclick="toggleMobileMenu()" class="text-gray-900">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#"
+              onclick="showPage('home')"
+              class="block px-3 py-2 text-gray-900 font-medium"
+              >Home</a
+            >
+            <a
+              href="#"
+              onclick="showPage('gallery')"
+              class="block px-3 py-2 text-gray-900 font-medium"
+              >Gallery</a
+            >
+            <a
+              href="#"
+              onclick="showPage('contact')"
+              class="block px-3 py-2 text-gray-900 font-medium"
+              >Contact Us</a
+            >
+            <a
+              href="#"
+              onclick="showPage('location')"
+              class="block px-3 py-2 text-gray-900 font-medium"
+              >Our Location</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home Page -->
+      <div id="homePage" class="page">
+        <!-- Hero Section -->
+        <section
+          class="bg-gradient-to-r from-red-600 to-red-700 text-white py-20"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+              JCPA CONSTRUCTION PTE LTD
+            </h1>
+            <p class="text-xl md:text-2xl mb-2">ARTIST OF RENOVATION</p>
+            <p class="text-lg opacity-90">REG NO: 202506985M</p>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                What We Do & What We Offer
+              </h2>
+              <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">⚡</span>
+                  <h3 class="font-semibold">Electrical & Plumbing Services</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">❄️</span>
+                  <h3 class="font-semibold">Air Con Installation & Services</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🔨</span>
+                  <h3 class="font-semibold">Wall Hacking & Dismantling</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🎨</span>
+                  <h3 class="font-semibold">Painting – Interior & Exterior</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🏠</span>
+                  <h3 class="font-semibold">Vinyl Flooring & Installation</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🪚</span>
+                  <h3 class="font-semibold">Carpentry</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🔧</span>
+                  <h3 class="font-semibold">General Repair & Maintenance</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">🏗️</span>
+                  <h3 class="font-semibold">Renovation Works</h3>
+                </div>
+              </div>
+
+              <div
+                class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600"
+              >
+                <div class="flex items-center mb-3">
+                  <span class="text-red-600 text-xl mr-3">👷</span>
+                  <h3 class="font-semibold">Reliable Handyman</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="service-card bg-gray-50 p-6 rounded-lg border-l-4 border-red-600 mb-12"
+            >
+              <div class="flex items-center mb-3">
+                <span class="text-red-600 text-xl mr-3">🏢</span>
+                <h3 class="font-semibold">
+                  General Construction Related Works
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-16 bg-red-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Why Choose JCPA Construction
+              </h2>
+              <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="text-center">
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">👥</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Honest and Respectful Workers
+                </h3>
+                <p class="text-gray-600">
+                  Our team maintains the highest standards of professionalism
+                  and integrity.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">⭐</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Quality Works</h3>
+                <p class="text-gray-600">
+                  We deliver exceptional craftsmanship in every project we
+                  undertake.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">💰</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Transparent Pricing</h3>
+                <p class="text-gray-600">
+                  No hidden costs or surprises. Clear, upfront pricing for all
+                  our services.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">⚡</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">
+                  Fast & Flexible Scheduling
+                </h3>
+                <p class="text-gray-600">
+                  We work around your schedule to minimize disruption to your
+                  daily life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Gallery Page -->
+      <div id="galleryPage" class="page hidden">
+        <section class="py-16 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                Our Work Gallery
+              </h1>
+              <p class="text-xl text-gray-600 mb-4">
+                See our craftsmanship in action
+              </p>
+              <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 p-4">
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_1.jpg" alt="Work Photo 1" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_2.jpg" alt="Work Photo 2" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_3.jpg" alt="Work Photo 3" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_4.jpg" alt="Work Photo 4" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_5.jpg" alt="Work Photo 5" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_6.jpg" alt="Work Photo 6" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_7.jpg" alt="Work Photo 7" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_8.jpg" alt="Work Photo 8" />
+              </div>
+              <div class="gallery-item mb-4">
+                <img src="img/work_photo_9.jpg" alt="Work Photo 9" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact Page -->
+      <div id="contactPage" class="page hidden">
+        <section class="py-16 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+              <p class="text-xl text-gray-600 mb-4">
+                Get in touch for your next project
+              </p>
+              <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <div id="contactForm" class="bg-gray-50 rounded-lg p-8 shadow-lg">
+              <form onsubmit="submitContactForm(event)">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Phone Number *</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Message *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                    placeholder="Tell us about your project..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-primary w-full text-white font-semibold py-3 px-6 rounded-lg"
+                >
+                  Submit Message
+                </button>
+              </form>
+            </div>
+
+            <div
+              id="thankYouMessage"
+              class="hidden bg-green-50 border border-green-200 rounded-lg p-8 text-center"
+            >
+              <div class="text-green-600 text-6xl mb-4">✅</div>
+              <h2 class="text-2xl font-bold text-green-800 mb-2">
+                Thank You for Getting in Touch!
+              </h2>
+              <p class="text-green-700 text-lg">
+                We will get back to you soon.
+              </p>
+              <button
+                onclick="resetContactForm()"
+                class="mt-4 text-red-600 hover:text-red-800 font-medium"
+              >
+                Send Another Message
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Location Page -->
+      <div id="locationPage" class="page hidden">
+        <section class="py-16 bg-white">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                Our Location
+              </h1>
+              <p class="text-xl text-gray-600 mb-4">Find us and get in touch</p>
+              <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <!-- First row: Address -->
+            <div class="grid md:grid-cols-1 gap-8 mb-8">
+              <div
+                class="bg-red-50 rounded-lg p-8 text-center border border-red-100"
+              >
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">📍</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                  Address
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  113 EUNOS AVENUE 3, #02-14<br />
+                  GORDON INDUSTRIAL BUILDING<br />
+                  SINGAPORE 409838
+                </p>
+              </div>
+            </div>
+
+            <!-- Second row: Email and Phone -->
+            <div class="grid md:grid-cols-2 gap-8">
+              <div
+                class="bg-red-50 rounded-lg p-8 text-center border border-red-100"
+              >
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">📧</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Email</h3>
+                <p class="text-gray-700">
+                  <a
+                    href="mailto:jcpaconstruction@gmail.com"
+                    class="text-red-600 hover:text-red-800 transition-colors"
+                  >
+                    jcpaconstruction@gmail.com
+                  </a>
+                </p>
+              </div>
+
+              <div
+                class="bg-red-50 rounded-lg p-8 text-center border border-red-100"
+              >
+                <div
+                  class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                >
+                  <span class="text-2xl">📞</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Phone</h3>
+                <p class="text-gray-700">
+                  <a
+                    href="tel:+6581471657"
+                    class="text-red-600 hover:text-red-800 transition-colors"
+                  >
+                    +65 8147 1657
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-12 bg-gray-50 rounded-lg p-8">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">
+                Business Hours
+              </h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-800 mb-2">Weekdays</h4>
+                  <p class="text-gray-600">
+                    Monday - Friday: 8:00 AM - 6:00 PM
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800 mb-2">Weekends</h4>
+                  <p class="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
+                  <p class="text-gray-600">Sunday: Closed</p>
+                </div>
+              </div>
+              <div class="mt-6 text-center">
+                <p class="text-red-600 font-medium">
+                  Emergency services available 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start mb-4">
+              <img
+                src="img/jcpa_logo2.png"
+                alt="JCPA Logo"
+                class="w-12 h-12 mr-3"
+              />
+              <span class="text-xl font-bold">JCPA Construction</span>
+            </div>
+            <p class="text-gray-400">Artist of Renovation</p>
+            <p class="text-gray-400 text-sm">REG NO: 202506985M</p>
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+            <div class="space-y-2">
+              <p class="text-gray-300">
+                <span class="text-red-400">📞</span>
+                <a
+                  href="tel:+6581471657"
+                  class="hover:text-red-400 transition-colors ml-2"
+                  >+65 8147 1657</a
+                >
+              </p>
+              <p class="text-gray-300">
+                <span class="text-red-400">📧</span>
+                <a
+                  href="mailto:jcpaconstruction@gmail.com"
+                  class="hover:text-red-400 transition-colors ml-2"
+                  >jcpaconstruction@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center md:text-right">
+            <h3 class="text-lg font-semibold mb-4">Our Address</h3>
+            <div class="text-gray-300">
+              <p>113 EUNOS AVENUE 3, #02-14</p>
+              <p>GORDON INDUSTRIAL BUILDING</p>
+              <p>SINGAPORE 409838</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 JCPA Construction Pte Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="js/index.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'98c437a831e19cf6',t:'MTc2MDA3OTM4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
